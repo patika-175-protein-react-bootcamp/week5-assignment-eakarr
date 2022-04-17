@@ -1,4 +1,4 @@
-export const InitialValues = {
+export const RegisterInitialValues = {
   name: "",
   surname: "",
   email: "",

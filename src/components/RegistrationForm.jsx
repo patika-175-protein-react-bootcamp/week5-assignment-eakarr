@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { RegisterationScheme } from "../constants/RegisterationScheme";
-import { InitialValues } from "../constants/InitialValues";
+import { RegisterInitialValues } from "../constants/RegisterInitialValues";
 import { Formik } from "formik";
 import style from "./RegistrationForm.module.css";
 
@@ -16,7 +16,7 @@ const RegistrationForm = () => {
     <div className={style.formContainer}>
       <Formik
         onSubmit={onSubmit}
-        initialValues={InitialValues}
+        initialValues={RegisterInitialValues}
         validationSchema={RegisterationScheme}
       >
         {({
